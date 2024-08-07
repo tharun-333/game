@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#game{
+    width: 800px;
+    height: 450px;
+    margin: auto;
+    border : solid 1px black;
+    overflow: hidden;
+   
+}
+#block{
+    height: 50px;
+    width: 40px;
+    background-color: black;
+    position: relative;
+    animation: block 3s infinite linear;
+    left: 800px;
+top: 450px;
+}
+#character{
+    height: 60px;
+    width: 30px;
+    background-color: olivedrab;
+    position: relative;
+    top: 350px;
+
+}
+.animation{
+    animation:jump 500ms linear  ;
+
+}
+@keyframes jump {
+    0%{top:340px}
+    30%{top:200px}
+    70%{top:200px}
+    100%{top:340px}
+}
+
+@keyframes block{
+    0%{left:800px}
+    100%{left:-100px}
+}
+
